@@ -1,0 +1,498 @@
+
+/* Geral style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contact button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600px;
+    background-color: #840EC9;
+    border: 0;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #840ec9d4;
+    transform: scale(1.05);
+}
+
+h2.title {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.title span {
+    color: #840EC9;
+}
+
+/* header style */
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.logo > a > img {
+    width: 200px;
+}
+
+/* mobal menu style */
+.btn-open-menu {
+    display: none;
+}
+
+.btn-open-menu i {
+    color: #fff;
+    font-size: 38px;
+}
+
+.menu-mobal {
+    background: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobal.open-menu {
+    width: 70%;
+}
+
+.menu-mobal.open-menu ~ .overlay-menu {
+    display: block;
+}
+
+.btn-close {
+    padding: 20px 5%;
+}
+
+.menu-mobal .btn-close i {
+    color: #fff;
+    font-size: 30px;
+}
+
+.menu-mobal nav ul {
+    text-align: right;
+}
+
+.menu-mobal nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobal nav ul li a:hover {
+    background-color: #840EC9;
+}
+
+.overlay-menu {
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    display: none;
+}
+
+
+/* top web style */
+section.web-top {
+    padding: 40px 4%;
+}
+
+section.web-top .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.web-top h1 {
+    color: #fff;
+    font-size: 44px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.web-top h1 span {
+    color: #840EC9;
+}
+
+.web-top .txt-web-top p {
+    color: #fff;
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+.web-top .img-web-top img {
+    position: relative;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0%  {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* specialities styles */
+section.specialities {
+    padding: 40px 4%;
+}
+
+section.specialities .flex {
+    gap: 60px;
+}
+
+.specialities .specialities-box {
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.2s;
+}
+
+.specialities .specialities-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px #ffffff78;
+}
+
+.specialities .specialities-box i {
+    font-size: 70px;
+    color: #840EC9;
+}
+
+.specialities .specialities-box h3 {
+    font-size: 28px;
+    margin: 15px 0px;
+}
+
+/* about styles */
+section.about {
+    padding: 80px 4%;
+}
+
+section.about .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.img-about img {
+    max-width: 400px;
+    border-radius: 40px;
+}
+
+.about .txt-about {
+    color: #fff;
+}
+
+.about .txt-about h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.about .txt-about h2 span {
+    color: #840EC9;
+    display: block;
+}
+
+.about .txt-about p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.about .txt-about ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.about .txt-about ul li {
+    margin-bottom: 5px;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #840EC9;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.2s;
+    color: #fff;
+}
+
+/* portfolio styles */
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff1d;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* form style */
+section.form {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #252525;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 160px;
+    background-color: #840EC9;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* footer styles*/
+footer {
+    padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.border {
+    border-bottom: 2px solid #840EC9;
+}
+
+footer .line-footer p i {
+    color: #840EC9;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .line-footer p {
+    margin: 10px 0;
+}
+
+
+@media screen and (max-width:1100px) {
+
+    /* geral class */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.title {
+        font-size: 34px;
+    }
+
+    /* header */
+    section.web-top .flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    .menu-desktop, .btn-contact {
+        display: none;
+    }
+
+    .btn-open-menu {
+        display: block;
+    }
+
+    /* web-top */
+    section.web-top {
+        padding: 20px 8%;
+    }
+
+    .web-top h1 {
+        font-size: 30px;
+    }
+
+    .web-top .img-web-top img {
+        width: 100%;
+    }
+
+    /* specialities styles */
+    section.specialities {
+        padding: 40px 8%;
+    }
+
+    /* about styles */
+    section.about {
+        padding: 80px 8%;
+    }
+
+    .about .txt-about h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-about {
+        width: 100%;
+    }
+
+    /* portfolio styles */
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    /* footer */
+    footer .flex {
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+}
