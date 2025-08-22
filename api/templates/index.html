@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- fontsGoogle -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <!-- fontsGoogleEnd -->
+
+    <!-- alert sweet2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- alert end -->
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- bootstrap icons end -->  
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fontAwesome end -->
+
+    <link rel="shortcut icon" href="static/images/whiteFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Sidney | Desenvolver de Softwares</title>
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="{{url_for('static', filename='images/whiteLogo.png')}}" alt="Sidney Software Developer Logo">
+                </a>
+            </div> <!-- logo -->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#specialities">Especialidades</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contact">
+                <a href="#contact-form">
+                    <button>Contato</button>
+                </a>
+            </div> <!-- btn-contact -->
+
+            <div class="btn-open-menu" id="btn-open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>  <!-- btn-open-menu -->
+
+            <div class="menu-mobal" id="menu-mobal">
+                <div class="btn-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div> <!-- btn-close -->
+
+                <nav>
+                    <ul>
+                        <li><a href="#web-top">Início</a></li>
+                        <li><a href="#specialities">Especialidades</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#contact-form">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div> <!-- menu-mobal -->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div> <!-- overlay-menu -->
+
+        </div> <!-- interface -->
+    </header>
+    
+    <main>
+
+        <section class="web-top" id="web-top">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-web-top">
+                        <h1>Olá! Eu sou Sidney, <span>Desenvolvedor de Software Full-Stack.</span></h1>
+                        <p>
+                            Sou apaixonado por tecnologia e estou sempre em busca de novos desafios para aprimorar minhas habilidades tanto no frontend quanto no backend. Minha missão é criar soluções eficientes e inovadoras, equilibrando a funcionalidade com uma experiência de usuário intuitiva.
+                        </p>
+                        <p>
+                            Seja transformando ideias em interfaces atraentes ou construindo sistemas robustos no backend, estou pronto para enfrentar qualquer desafio que surgir. Vamos criar algo incrível juntos!
+                        </p>
+                        <div class="btn-contact">
+                            <a href="#contact-form">
+                                <button>Entre em Contato</button>
+                            </a>
+                        </div> <!-- btn-contact -->
+                    </div> <!-- txt-web-top -->
+
+                    <div class="img-web-top">
+                        <img src="{{url_for('static',filename='images/photoPerfil.png')}}" alt="Sidney Photo">
+                    </div> <!-- img-web-top -->
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- web-top -->
+
+        <section class="specialities" id="specialities">
+            <div class="interface">
+                <h2 class="title">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+
+                    <div class="specialities-box">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Frontend</h3>
+                        <p>
+                            Tenho experiência na construção de interfaces modernas e responsivas, utilizando HTML, CSS, e JavaScript. Sou proficiente em frameworks como Axios, que me permitem criar aplicações integradas com o backend.
+                        </p>
+                    </div> <!-- specialities-box -->
+
+                    <div class="specialities-box">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Backend</h3>
+                        <p>
+                            Tenho experiência no desenvolvimento backend utilizando Python e o framework Flask e Django (básico). Com Flask, desenvolvo aplicações web escaláveis e seguras, administração automática, e a arquitetura MVC para criar sistemas robustos e fáceis de manter.
+                        </p>
+                    </div> <!-- specialities-box -->
+
+                    <div class="specialities-box">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Banco de Dados</h3>
+                        <p>
+                            Sou proficiente em MySQL Server. Utilizo MySQL Server para bancos de dados relacionais e para bancos de dados orientados a documentos. Tenho experiência em modelagem de dados e otimização de consultas, garantindo a eficiência dos sistemas que desenvolvo.
+                        </p>
+                    </div> <!-- specialities-box -->
+
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- specialities -->
+    
+        <section class="about" id="about">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-about">
+                        <img src="{{url_for('static',filename='images/myPhoto.jpg')}}" alt="Sidney Photo">
+                    </div> <!-- img-about -->
+
+                    <div class="txt-about">
+                        <h2>MUITO PRAZER, <span>SOU SIDNEY.</span></h2>
+                        <p>
+                            Olá! Meu nome é Sidney e sou um desenvolvedor full-stack com uma paixão por criar soluções tecnológicas que façam a diferença. Com experiência em frontend e backend, sou especializado em Python e Django para desenvolvimento backend e React para interfaces dinâmicas no frontend.
+                        </p>
+                        <p>
+                            Comecei minha jornada no desenvolvimento de software no início de 2022 ao explorar o potencial criativo da programação no Curso de Análise e Desenvolvimento de Sistenas no SENAI, e desde então, tenho me dedicado a aprender e aplicar novas tecnologias, sempre focando na qualidade do código e na experiência do usuário.
+                        </p>
+                        <p>
+                            Minha missão é continuar evoluindo como desenvolvedor e contribuir para projetos que desafiem minhas habilidades e ajudem a resolver problemas complexos. Quando não estou codificando, gosto de explorar novas tecnologias, nos momentos de lazer, sou apaixonado por música e leitura.
+                        </p>
+                        <p>
+                            Estou sempre aberto a novas oportunidades de aprendizado e colaboração. Se quiser conversar sobre desenvolvimento ou colaborar em um projeto, ficarei feliz em trocar ideias!
+                        </p>
+                        <p>
+                            Habilidades Técnicas:
+                        </p>
+                        <ul>
+                            <li>Frontend: HTML, CSS, JavaScript.</li>
+                            <li>Backend: Python, Node.js.</li>
+                            <li>Bancos de Dados: MySQL Server.</li>
+                            <li>Outras Ferramentas: VS Code, Figma, Github.</li>
+                        </ul>
+                        
+                        <div class="btn-social">
+                            <a href="https://github.com/HiSidney" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/sidney-fekir-249115327/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                        </div> <!-- btn-social -->
+                    </div> <!-- txt-about -->
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- about -->
+    
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="title">MEUS <span>PROJETOS</span></h2>
+                <div class="flex">
+
+                    <a href="https://github.com/HiSidney/eiya_animes" target="_blank">
+                        <div class="img-port" style="background-image: url(static/images/photoPerfil.png);">
+                            <div class="overlay">Eiya Animes</div>
+                        </div> <!-- img-port -->
+                    </a>
+
+                    <a href="https://github.com/HiSidney/projetoAlimentacaoEscolar" target="_blank">
+                        <div class="img-port" style="background-image: url(static/images/food.png);">
+                            <div class="overlay">Alimentação Escolar</div>
+                        </div> <!-- img-port -->
+                    </a>
+
+                    <!-- <div class="img-port"  style="background-image: url(static/images/whiteFavicon.png);">
+                        <div class="overlay">Projeto 3</div>
+                    </div> img-port -->
+
+                </div> <!-- flex -->
+            </div> <!-- interface -->
+        </section> <!-- portfolio -->
+    
+        <section class="form" id="form">
+            <div class="interface">
+                <h2 class="title">FALE <span>COMIGO.</span></h2>
+
+                <form id="contact-form" method="POST">
+                    <input type="text" name="name" id="input-name" placeholder="Seu Nome:" required>
+                    <input type="text" name="email" id="input-email" placeholder="Seu E-mail:" required>
+                    <input type="text" name="phone" id="input-phone" placeholder="Seu Celular:">
+                    <textarea name="message" id="textarea-message" placeholder="Sue Mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+
+                <div id="form-messages"></div>
+
+            </div> <!-- interface -->
+        </section> <!-- form -->
+    
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer border">
+                <div class="flex">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="{{url_for('static',filename='images/whiteLogo.png')}}" alt="Sidney Software Developer Logo">
+                        </a>
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://github.com/HiSidney" target="_blank"><button><i class="fa-brands fa-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/sidney-fekir-249115327/" target="_blank"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                    </div> <!-- btn-social -->
+                </div> <!-- flex -->
+            </div> <!-- line-footer -->
+
+            <div class="line-footer">
+                <p><i class="fa-solid fa-envelope"></i> <a href="mailto:sidney.fekir@gmail.com" target="_blank">sidney.fekir@gmail.com</a></p>
+                <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/5519995285336" target="_blank">+55 (19) 99528-5336</a></p>
+            </div> <!-- line-footer -->
+        </div> <!-- interface -->
+    </footer>
+
+    <script src="{{url_for('static',filename='js/menu.js')}}" defer></script>
+</body>
+</html>
